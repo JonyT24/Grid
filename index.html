@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My first landing page</title>
+    <script src="./java-grid.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="content">
+            <div class="title">ETCH A SKETCH</div>
+    
+            <div class="main">
+                <div class="buttons">
+                    <button id="penButton" onclick="changeColor('black')"> <img src="./Pictures/pen.svg"</button>
+                    <button id="eraserButton" onclick="changeColor('white')"> <img src = "./Pictures/eraser.svg"</button>
+                    <button id="randomButton" onclick="randomColour()"><img src="./Pictures/random.svg"</button>
+                    <button id="resetButton" onclick="resetGrid()">RESET</button>
+                    <div class="footer">
+                        <button id="setButton">Set canvas resolution
+                        </button>
+                        <input type = "text" placeholder="Size" value="16" onchange="changeResolution(this.value)"/>
+                        </div>
+                </div>
+                <div id="board"></div>
+                <div class="empty"></div>
+        
+            </div>
+        </div>
+    </div>
+  </body>
